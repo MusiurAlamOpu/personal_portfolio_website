@@ -1,0 +1,38 @@
+#logo {
+  width: 50px;
+}
+
+.linkStyle {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 10px;
+  color: #2ecfa8;
+  font-family: "Consolas", Courier, monospace;
+  transition: 1s;
+}
+.linkStyle:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+}
+
+.linkStyle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: #2ecfa8;
+  transform-origin: bottom left;
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+
+.linkStyle:hover::after {
+  transform: scaleX(0);
+  height: 2px;
+  transform-origin: bottom right;
+}

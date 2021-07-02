@@ -1,0 +1,29 @@
+#contactTitle {
+  color: #2ecfa8;
+  padding: 2% 0%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  transition: 1s;
+}
+@media (max-width: 800px) {
+  #contactTitle {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 600px) {
+  #contactTitle {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  #contactTitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 350px) {
+  #contactTitle {
+    font-size: 25px;
+  }
+}

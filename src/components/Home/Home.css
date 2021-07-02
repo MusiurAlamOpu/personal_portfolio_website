@@ -1,0 +1,167 @@
+.details {
+  color: grey;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: consolas, "courier", monospace;
+}
+.details2 {
+  color: #2ecfa8;
+  font-size: 20px;
+  font-family: consolas, "courier", monospace;
+}
+#button {
+  background-color: #2ecfa8;
+  transition: 3s;
+  font-weight: 600;
+  border-radius: 30px;
+}
+#button:hover {
+  transform: scale(1.1);
+}
+#whoAmIDiv {
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-left: 3%;
+  padding-bottom: 10%;
+  border-width: 3px;
+  border-left-style: solid;
+  border-image: linear-gradient(to top, #2ecfa8, rgba(0, 0, 0, 0)) 1 100%;
+}
+#remumeDiv {
+  margin-left: 5%;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  border-width: 3px;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, #2ecfa8, rgba(0, 0, 0, 0)) 1 100%;
+  padding-left: 3%;
+}
+#firstDiv {
+  padding-left: 20%;
+}
+#secondDiv {
+  padding-left: 20%;
+}
+#downloadResume {
+  font-size: 100px;
+  font-family: consolas, "courier", monospace;
+  color: white;
+  font-weight: 800;
+}
+#opuIs {
+  color: #2ecfa8;
+  padding-top: 10%;
+  font-size: 150px;
+  font-family: consolas, "courier", monospace;
+  font-weight: 800;
+}
+@media (max-width: 1300px) {
+  #firstDiv {
+    padding-left: 15%;
+  }
+  #secondDiv {
+    padding-left: 15%;
+  }
+  #downloadResume {
+    font-size: 70px;
+    font-weight: 700;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 120px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 976px) {
+  #firstDiv {
+    padding-left: 15%;
+  }
+  #secondDiv {
+    padding-left: 15%;
+  }
+  #downloadResume {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 110px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 830px) {
+  #firstDiv {
+    padding-left: 15%;
+  }
+  #secondDiv {
+    padding-left: 15%;
+  }
+  #downloadResume {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 620px) {
+  #firstDiv {
+    padding-left: 15%;
+  }
+  #secondDiv {
+    padding-left: 15%;
+  }
+  #downloadResume {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 60px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 500px) {
+  #firstDiv {
+    padding-left: 15%;
+  }
+  #secondDiv {
+    padding-left: 15%;
+  }
+  #downloadResume {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  #firstDiv {
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+  #secondDiv {
+    padding-left: 10%;
+  }
+  #downloadResume {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #opuIs {
+    padding-top: 10%;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .details {
+    font-size: 15px;
+  }
+  .details2 {
+    font-size: 15px;
+  }
+}

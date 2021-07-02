@@ -1,0 +1,29 @@
+#aboutMainDiv {
+  background-image: url("./myPic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200vh;
+  font-family: consolas, courier, monospace;
+}
+#aboutSecondDiv {
+  min-height: 200vh;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(180, 13%, 6%, 0.937),
+    rgba(27, 27, 27, 0.89)
+  );
+}
+#header {
+  font-size: 80px;
+  font-family: "consolas", Courier, monospace;
+  font-weight: 1000;
+  padding-top: 15%;
+  color: #2efac8;
+  font-family: consolas, courier, monospace;
+}
+
+@media (max-width: 500px) {
+  #header {
+    font-size: 50px;
+  }
+}
