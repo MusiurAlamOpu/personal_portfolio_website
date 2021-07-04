@@ -47,44 +47,40 @@ const Contact = () => {
       }}
     >
       <div id="contactTitle">.contact(email)</div>
-      <Zoom>
-        <Fade>
-          <form className="contact-form" onSubmit={sendEmail}>
-            <div id="mainDivOfForm">
-              <Input
-                className="inputBarStyles"
-                type="hidden"
-                name="contact_number"
-              />
-              <label style={labelStyle}>Name</label>
-              <Input className="inputBarStyles" type="text" name="user_name" />
-              <label style={labelStyle}>Email</label>
-              <Input
-                className="inputBarStyles"
-                type="email"
-                name="user_email"
-              />
-              <label style={labelStyle}>Message</label>
-              <Input className="inputBarStyles" type="text" name="message" />
-              <input
-                style={{
-                  backgroundColor: "#2ecfa8",
-                  borderRadius: "30px",
-                  fontWeight: "500",
-                  width: "100px",
-                  height: "50px",
-                  border: "none",
-                  margin: "4%",
-                  fontSize: "20px",
-                  color: "black",
-                }}
-                type="submit"
-                value="Send"
-              />
-            </div>
-          </form>
-        </Fade>
-      </Zoom>
+      {/* <Zoom> */}
+      <Fade bottom>
+        <form className="contact-form" onSubmit={sendEmail}>
+          <div id="mainDivOfForm">
+            <Input
+              className="inputBarStyles"
+              type="hidden"
+              name="contact_number"
+            />
+            <label style={labelStyle}>Name</label>
+            <Input className="inputBarStyles" type="text" name="user_name" />
+            <label style={labelStyle}>Email</label>
+            <Input className="inputBarStyles" type="email" name="user_email" />
+            <label style={labelStyle}>Message</label>
+            <Input className="inputBarStyles" type="text" name="message" />
+            <input
+              style={{
+                backgroundColor: "#2ecfa8",
+                borderRadius: "30px",
+                fontWeight: "500",
+                width: "100px",
+                height: "50px",
+                border: "none",
+                margin: "4%",
+                fontSize: "20px",
+                color: "black",
+              }}
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </form>
+      </Fade>
+      {/* </Zoom> */}
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Hey,</Modal.Title>
