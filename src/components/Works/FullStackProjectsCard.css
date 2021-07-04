@@ -1,3 +1,14 @@
+#CardStyles {
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+#CardStyles:hover {
+  border: 1px solid lightgrey;
+}
+
 #name {
   color: #2efac8;
   padding-top: 4%;

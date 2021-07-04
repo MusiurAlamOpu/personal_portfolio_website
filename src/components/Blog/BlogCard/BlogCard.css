@@ -1,0 +1,15 @@
+#readTheBlog {
+  font-size: 6px;
+}
+#titleStyles {
+  font-size: 18px;
+}
+
+#SuperDiv {
+  width: 270px;
+  border-radius: 20px;
+  /* border: 1px solid #2ecfa8; */
+  height: 300px;
+  margin: 2%;
+  background-color: rgba(0, 0, 0, 0.353);
+}

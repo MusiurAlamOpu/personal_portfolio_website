@@ -1,6 +1,7 @@
 import React from "react";
-import blog1 from "../../Images/blog1.png";
 import Fade from "react-reveal/Fade";
+import BlogCard from "./BlogCard/BlogCard";
+import BlogData from "./BlogData.json";
 import "./Blog.css";
 
 const Blog = () => {
@@ -8,7 +9,8 @@ const Blog = () => {
     <div
       style={{
         textAlign: "center",
-        padding: "10%",
+        padding: "15% 10%",
+        // paddintTop: "80px",
         backgroundColor: "#0E1212",
         color: "#2efac8",
         minHeight: "100vh",
@@ -31,33 +33,18 @@ const Blog = () => {
           </a>
         </div>
       </Fade>
-
-      <div className="container-fluid d-flex flex-wrap">
-        <Fade bottom>
-          <div
-            className="container"
-            style={{
-              width: "70%",
-              borderRadius: "10px",
-              border: "1px solid #2ecfa8",
-              padding: "2%",
-            }}
-          >
-            <img
-              style={{ width: "100%", borderRadius: "8px" }}
-              src={blog1}
-              alt=""
-            ></img>
-            <a
-              id="readTheBlog"
-              rel="noreferrer"
-              target="_blank"
-              href="https://musiuralamopu.medium.com/how-to-create-a-functional-component-of-react-js-in-vs-code-e7710c415d3"
-            >
-              read the blog...
-            </a>
-          </div>
-        </Fade>
+      <i>note: if there is any issue then, use vpn to read on medium.com</i>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {BlogData.map((data) => {
+          return <BlogCard key={data.id} data={data}></BlogCard>;
+        })}
       </div>
     </div>
   );

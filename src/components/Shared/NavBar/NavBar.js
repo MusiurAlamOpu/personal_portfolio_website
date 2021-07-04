@@ -10,6 +10,7 @@ const NavBar = () => {
   return (
     <div>
       <Navbar
+        id="NavDiv"
         style={{
           padding: "1% 10%",
           backgroundColor: "#0e1212",

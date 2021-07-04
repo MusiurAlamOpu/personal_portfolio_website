@@ -9,7 +9,6 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import "./Contact.css";
-import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 const Contact = () => {
   const [show, setShow] = useState(false);
@@ -44,31 +43,29 @@ const Contact = () => {
         backgroundColor: "#0E1212",
         fontFamily: "consolas, courier, monospace",
         minHeight: "100vh",
-        padding: "10% 1%",
+        padding: "100px 1%",
       }}
     >
-      <ParticlesBackground />
-      <div id="contactTitle">.contact(viaMail)</div>
+      <div id="contactTitle">.contact(email)</div>
       <Zoom>
         <Fade>
           <form className="contact-form" onSubmit={sendEmail}>
-            <div
-              style={{
-                margin: "0% 10%",
-                padding: "5%",
-                backgroundColor: "#101C2C",
-                borderRadius: "30px",
-                boxShadow: "0px 0px 8px black",
-                opacity: "90%",
-              }}
-            >
-              <Input type="hidden" name="contact_number" />
+            <div id="mainDivOfForm">
+              <Input
+                className="inputBarStyles"
+                type="hidden"
+                name="contact_number"
+              />
               <label style={labelStyle}>Name</label>
-              <Input type="text" name="user_name" />
+              <Input className="inputBarStyles" type="text" name="user_name" />
               <label style={labelStyle}>Email</label>
-              <Input type="email" name="user_email" />
+              <Input
+                className="inputBarStyles"
+                type="email"
+                name="user_email"
+              />
               <label style={labelStyle}>Message</label>
-              <Input type="text" name="message" />
+              <Input className="inputBarStyles" type="text" name="message" />
               <input
                 style={{
                   backgroundColor: "#2ecfa8",

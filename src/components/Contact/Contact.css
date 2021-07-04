@@ -1,3 +1,12 @@
+#mainDivOfForm {
+  margin: 0% 10%;
+  padding: 5%;
+  background-color: #00000063;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px black;
+  opacity: 90%;
+}
+
 #contactTitle {
   color: #2ecfa8;
   padding: 2% 0%;
@@ -6,6 +15,12 @@
   font-weight: 900;
   transition: 1s;
 }
+
+.inputBarStyles {
+  background-color: #000000db;
+  border: none;
+}
+
 @media (max-width: 800px) {
   #contactTitle {
     font-size: 40px;

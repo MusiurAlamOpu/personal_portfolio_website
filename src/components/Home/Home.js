@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 import { Button } from "@material-ui/core";
-import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagic } from "@fortawesome/free-solid-svg-icons";
@@ -16,10 +15,10 @@ const Home = () => {
       className="container-fluid"
       style={{
         backgroundColor: "#0e1212",
+        paddingTop: "5%",
       }}
     >
       {/* <NavBar /> */}
-      <ParticlesBackground />
       <div id="firstDiv">
         <div id="whoAmIDiv">
           <Fade top>
@@ -62,7 +61,6 @@ const Home = () => {
         </div>
       </div>
       <div>
-        {/* <ParticlesBackground /> */}
         <div id="secondDiv">
           <div id="remumeDiv">
             <Fade bottom>
@@ -116,8 +114,8 @@ const Home = () => {
                   color: "grey",
                 }}
               >
-                React Js, Bootstrap, Material Ui, particale Js, Html, Css,
-                Firebase, fontawesome, emailJs, react-router-dom etc.
+                React Js, Bootstrap, Material Ui, Html, Css, Firebase,
+                fontawesome, emailJs, react-router-dom etc.
               </p>
             </div>
           </div>
