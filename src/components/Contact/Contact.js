@@ -43,44 +43,49 @@ const Contact = () => {
         backgroundColor: "#0E1212",
         fontFamily: "consolas, courier, monospace",
         minHeight: "100vh",
-        padding: "100px 1%",
+        padding: "10% 1%",
       }}
     >
-      <div id="contactTitle">.contact(email)</div>
-      {/* <Zoom> */}
-      <Fade bottom>
-        <form className="contact-form" onSubmit={sendEmail}>
-          <div id="mainDivOfForm">
-            <Input
-              className="inputBarStyles"
-              type="hidden"
-              name="contact_number"
-            />
-            <label style={labelStyle}>Name</label>
-            <Input className="inputBarStyles" type="text" name="user_name" />
-            <label style={labelStyle}>Email</label>
-            <Input className="inputBarStyles" type="email" name="user_email" />
-            <label style={labelStyle}>Message</label>
-            <Input className="inputBarStyles" type="text" name="message" />
-            <input
+      <div id="contactTitle">.contact(viaMail)</div>
+      <Zoom>
+        <Fade>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <div
               style={{
-                backgroundColor: "#2ecfa8",
+                margin: "0% 10%",
+                padding: "5%",
+                backgroundColor: "#101C2C",
                 borderRadius: "30px",
-                fontWeight: "500",
-                width: "100px",
-                height: "50px",
-                border: "none",
-                margin: "4%",
-                fontSize: "20px",
-                color: "black",
+                boxShadow: "0px 0px 8px black",
+                opacity: "90%",
               }}
-              type="submit"
-              value="Send"
-            />
-          </div>
-        </form>
-      </Fade>
-      {/* </Zoom> */}
+            >
+              <Input type="hidden" name="contact_number" />
+              <label style={labelStyle}>Name</label>
+              <Input type="text" name="user_name" />
+              <label style={labelStyle}>Email</label>
+              <Input type="email" name="user_email" />
+              <label style={labelStyle}>Message</label>
+              <Input type="text" name="message" />
+              <input
+                style={{
+                  backgroundColor: "#2ecfa8",
+                  borderRadius: "30px",
+                  fontWeight: "500",
+                  width: "100px",
+                  height: "50px",
+                  border: "none",
+                  margin: "4%",
+                  fontSize: "20px",
+                  color: "black",
+                }}
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </Fade>
+      </Zoom>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Hey,</Modal.Title>
